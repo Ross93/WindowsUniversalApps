@@ -1,0 +1,60 @@
+﻿<Page
+    x:Class="FindMyCar.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:FindMyCar"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+    <Page.Resources>
+        <Style TargetType="TextBlock">
+            <Setter Property="HorizontalAlignment" Value="Left" />
+            <Setter Property="FontFamily" Value="Comic Sans MS"/>
+            <Setter Property="FontSize" Value="24"/>
+            <Setter Property="Margin" Value="20 0"/>
+        </Style>
+        <Style TargetType="PasswordBox">
+            <Setter Property="HorizontalAlignment" Value="Right" />
+            <Setter Property="FontFamily" Value="Times New Roman"/>
+            <Setter Property="Margin" Value="20"/>
+            <Setter Property="FontSize" Value="20"/>
+            <Setter Property="Height" Value="27"/>
+            <Setter Property="Width" Value="190"/>
+            <Setter Property="Padding" Value="10 0 0 5"/>
+        </Style>
+        <Style TargetType="TextBox">
+            <Setter Property="HorizontalAlignment" Value="Right" />
+            <Setter Property="FontFamily" Value="Times New Roman"/>
+            <Setter Property="Margin" Value="20"/>
+            <Setter Property="FontSize" Value="20"/>
+            <Setter Property="Height" Value="27"/>
+            <Setter Property="Width" Value="190"/>
+            <Setter Property="Padding" Value="10 0 0 5"/>
+        </Style>
+        <Style TargetType="Button">
+            <Setter Property="HorizontalAlignment" Value="Right" />
+            <Setter Property="VerticalAlignment" Value="Bottom" />
+            <Setter Property="FontFamily" Value="Times New Roman"/>
+            <Setter Property="Margin" Value="15 40"/>
+            <Setter Property="FontSize" Value="22"/>
+            <Setter Property="Width" Value="180"/>
+            <Setter Property="VerticalAlignment" Value="Bottom"/>
+        </Style>
+
+    </Page.Resources>
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="0.2*"/>
+            <RowDefinition Height="0.2*"/>
+            <RowDefinition Height="0.4*"/>
+        </Grid.RowDefinitions>
+        <TextBlock Grid.Row="1"  Text="Username:" />
+        <TextBox  Name="UsernameInputBox" Text="{Binding User.Username, Mode=TwoWay}" PlaceholderText="Enter username here" Margin="0,0,20,0" Grid.Row="1" />
+        <TextBlock  Grid.Row="2"  Text="Password:" />
+        <PasswordBox Grid.Row="2"  Name="PasswordInputBox" Password="{Binding User.Password, Mode=TwoWay}"  PlaceholderText="Enter password here" Margin="0,0.333,20,0" />
+        <Button Grid.Row="3" Content="SignUp" Name="signUpButton" HorizontalAlignment="Right" Click="signUpButton_Click" />
+        <Button Grid.Row="3"  Content="SignIn" Name="signInButton" HorizontalAlignment="Left" Click="signInButton_Click" />
+        <TextBlock Name="test"></TextBlock>
+    </Grid>
+</Page>

@@ -1,0 +1,114 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Machine>ROSI</Machine>
+    <WindowsUser>Росица</WindowsUser>
+    <TargetPlatformIdentifier>Windows</TargetPlatformIdentifier>
+    <SolutionConfiguration>Debug|AnyCPU</SolutionConfiguration>
+    <PackageArchitecture>neutral</PackageArchitecture>
+    <PackageIdentityName>ec445b39-9acd-4824-a111-2e801631cadb</PackageIdentityName>
+    <IntermediateOutputPath>C:\Users\Росица\Desktop\ProjectArchitecture\FindMyCar\FindMyCar\FindMyCar.Windows\obj\Debug\</IntermediateOutputPath>
+    <RegisteredManifestChecksum>F8DD4721BCD01D28006D5624AE8A5A58B1FF11F6BBA1377C7E4C6BDC8B82C782</RegisteredManifestChecksum>
+    <RegisteredPackageMoniker>ec445b39-9acd-4824-a111-2e801631cadb_1.0.0.0_neutral__qv4dynv2mnkwr</RegisteredPackageMoniker>
+    <RegisteredUserModeAppID>ec445b39-9acd-4824-a111-2e801631cadb_qv4dynv2mnkwr!App</RegisteredUserModeAppID>
+    <RegisteredPackageID>ec445b39-9acd-4824-a111-2e801631cadb</RegisteredPackageID>
+    <RegisteredPackagePublisher>CN=Росица</RegisteredPackagePublisher>
+    <RegisteredVersion>1.0.0.0</RegisteredVersion>
+    <JitOptimizationSuppressed>True</JitOptimizationSuppressed>
+  </PropertyGroup>
+  <ItemGroup>
+    <AppXManifest Include="C:\Users\Росица\Desktop\ProjectArchitecture\FindMyCar\FindMyCar\FindMyCar.Windows\bin\Debug\AppxManifest.xml">
+      <PackagePath>AppxManifest.xml</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2014-11-22T11:52:52.595</Modified>
+    </AppXManifest>
+  </ItemGroup>
+  <ItemGroup>
+    <AppxPackagedFile Include="C:\Users\Росица\Desktop\ProjectArchitecture\FindMyCar\FindMyCar\FindMyCar.Windows\bin\Debug\FindMyCar.Windows.exe">
+      <PackagePath>FindMyCar.Windows.exe</PackagePath>
+      <Modified>2014-11-22T12:10:31.217</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Росица\Desktop\ProjectArchitecture\FindMyCar\packages\MvvmLightLibs.5.0.2.0\lib\netcore451\GalaSoft.MvvmLight.dll">
+      <PackagePath>GalaSoft.MvvmLight.dll</PackagePath>
+      <Modified>2014-11-21T10:47:48.610</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Росица\Desktop\ProjectArchitecture\FindMyCar\packages\MvvmLightLibs.5.0.2.0\lib\netcore451\GalaSoft.MvvmLight.Extras.dll">
+      <PackagePath>GalaSoft.MvvmLight.Extras.dll</PackagePath>
+      <Modified>2014-11-21T10:47:48.623</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Росица\Desktop\ProjectArchitecture\FindMyCar\packages\MvvmLightLibs.5.0.2.0\lib\netcore451\GalaSoft.MvvmLight.Platform.dll">
+      <PackagePath>GalaSoft.MvvmLight.Platform.dll</PackagePath>
+      <Modified>2014-11-21T10:47:48.643</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Росица\Desktop\ProjectArchitecture\FindMyCar\packages\CommonServiceLocator.1.3\lib\portable-net4+sl5+netcore45+wpa81+wp8\Microsoft.Practices.ServiceLocation.dll">
+      <PackagePath>Microsoft.Practices.ServiceLocation.dll</PackagePath>
+      <Modified>2014-11-21T10:47:48.094</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Росица\Desktop\ProjectArchitecture\FindMyCar\libs\Parse.dll">
+      <PackagePath>Parse.dll</PackagePath>
+      <Modified>2014-10-16T09:48:12.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Росица\Desktop\ProjectArchitecture\FindMyCar\libs\Parse.WinRT.dll">
+      <PackagePath>Parse.WinRT.dll</PackagePath>
+      <Modified>2014-10-16T09:48:12.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Росица\Desktop\ProjectArchitecture\FindMyCar\FindMyCar\FindMyCar.Windows\Assets\Logo.scale-100.png">
+      <PackagePath>Assets\Logo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2014-03-14T07:55:28.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Росица\Desktop\ProjectArchitecture\FindMyCar\FindMyCar\FindMyCar.Windows\Assets\SmallLogo.scale-100.png">
+      <PackagePath>Assets\SmallLogo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2014-03-14T07:55:28.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Росица\Desktop\ProjectArchitecture\FindMyCar\FindMyCar\FindMyCar.Windows\Assets\SplashScreen.scale-100.png">
+      <PackagePath>Assets\SplashScreen.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2014-03-14T07:55:28.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Росица\Desktop\ProjectArchitecture\FindMyCar\FindMyCar\FindMyCar.Windows\Assets\StoreLogo.scale-100.png">
+      <PackagePath>Assets\StoreLogo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2014-03-14T07:55:28.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Росица\Desktop\ProjectArchitecture\FindMyCar\FindMyCar\FindMyCar.Windows\bin\Debug\App.xbf">
+      <PackagePath>App.xbf</PackagePath>
+      <Modified>2014-11-21T10:53:40.964</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Росица\Desktop\ProjectArchitecture\FindMyCar\FindMyCar\FindMyCar.Windows\bin\Debug\Pages\CarFoundView.xbf">
+      <PackagePath>Pages\CarFoundView.xbf</PackagePath>
+      <Modified>2014-11-22T10:29:22.755</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Росица\Desktop\ProjectArchitecture\FindMyCar\FindMyCar\FindMyCar.Windows\bin\Debug\Pages\CarLeftView.xbf">
+      <PackagePath>Pages\CarLeftView.xbf</PackagePath>
+      <Modified>2014-11-22T11:59:10.449</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Росица\Desktop\ProjectArchitecture\FindMyCar\FindMyCar\FindMyCar.Windows\bin\Debug\Pages\FindCarView.xbf">
+      <PackagePath>Pages\FindCarView.xbf</PackagePath>
+      <Modified>2014-11-22T10:29:22.779</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Росица\Desktop\ProjectArchitecture\FindMyCar\FindMyCar\FindMyCar.Windows\bin\Debug\Pages\LeaveCarView.xbf">
+      <PackagePath>Pages\LeaveCarView.xbf</PackagePath>
+      <Modified>2014-11-22T10:29:22.782</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Росица\Desktop\ProjectArchitecture\FindMyCar\FindMyCar\FindMyCar.Windows\bin\Debug\Pages\MainPage.xbf">
+      <PackagePath>Pages\MainPage.xbf</PackagePath>
+      <Modified>2014-11-21T14:02:08.671</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Росица\Desktop\ProjectArchitecture\FindMyCar\FindMyCar\FindMyCar.Windows\bin\Debug\Pages\RegisterView.xbf">
+      <PackagePath>Pages\RegisterView.xbf</PackagePath>
+      <Modified>2014-11-21T20:53:41.396</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Росица\Desktop\ProjectArchitecture\FindMyCar\FindMyCar\FindMyCar.Windows\bin\Debug\FindMyCar.Windows.xr.xml">
+      <PackagePath>FindMyCar.Windows.xr.xml</PackagePath>
+      <Modified>2014-11-22T11:38:06.328</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Росица\Desktop\ProjectArchitecture\FindMyCar\FindMyCar\FindMyCar.Windows\bin\Debug\resources.pri">
+      <PackagePath>resources.pri</PackagePath>
+      <Modified>2014-11-22T12:06:22.810</Modified>
+    </AppxPackagedFile>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+</Project>

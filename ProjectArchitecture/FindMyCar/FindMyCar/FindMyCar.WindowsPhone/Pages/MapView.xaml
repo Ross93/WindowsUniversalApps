@@ -1,0 +1,44 @@
+﻿<Page xmlns:Maps="using:Windows.UI.Xaml.Controls.Maps" 
+    x:Class="FindMyCar.Pages.MapView"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:FindMyCar.Pages"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+      mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid x:Name="LayoutRoot">
+
+        <Grid.ChildrenTransitions>
+            <TransitionCollection>
+                <EntranceThemeTransition/>
+            </TransitionCollection>
+        </Grid.ChildrenTransitions>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <!-- Title Panel -->
+        <StackPanel Grid.Row="0" Margin="19,0,0,0">
+            <TextBlock Text="Map" Style="{ThemeResource TitleTextBlockStyle}" Margin="0,12,0,0"/>
+            <TextBlock Text="Your position and car position" Margin="0,-6.5,0,26.5" Style="{ThemeResource HeaderTextBlockStyle}" CharacterSpacing="{ThemeResource PivotHeaderItemCharacterSpacing}"/>
+        </StackPanel>
+
+        <!--TODO: Content should be placed within the following grid-->
+        <Grid x:Name="ContentRoot"  Grid.Row="1">
+
+            <Maps:MapControl Grid.Row="1"
+                         Margin="24,0"
+                             Width="350"
+                             Height="350"
+                         x:Name="myMap" 
+                         MapServiceToken="Credentials=&quot;AiFTXnMoalZ-eN9AjO34J_3ZIv0r1rFsnEKOn8TUBD6QvCyoVm7FVGkdNZzM7bVu&quot;" />
+
+        </Grid>
+
+
+    </Grid>
+</Page>
