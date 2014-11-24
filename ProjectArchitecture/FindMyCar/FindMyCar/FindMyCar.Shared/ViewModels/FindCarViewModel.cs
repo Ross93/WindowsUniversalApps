@@ -49,5 +49,11 @@ namespace FindMyCar.ViewModels
             await msgDialog.ShowAsync();
         }
 
+
+        internal async void showSMSMessage()
+        {
+            var msgDialog = new MessageDialog("SMS has been sent.");
+            await msgDialog.ShowAsync();
+        }
     }
 }

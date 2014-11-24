@@ -6,8 +6,8 @@ using Parse;
 
 namespace FindMyCar.Models
 {
-      [Table("CarLefts")]
-  public  class CarLeftModel
+    [Table("CarLefts")]
+    public class CarLeftModel
     {
         [PrimaryKey, AutoIncrement]
         public int ID { get; set; }

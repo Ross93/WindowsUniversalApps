@@ -1,0 +1,114 @@
+﻿<Page
+    x:Class="FindMyCar.Pages.CarFoundView"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:FindMyCar.Pages"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+    <Page.Resources>
+        
+        <!--A Style that affects all TextBlocks-->
+        <Style TargetType="TextBlock">
+            <Setter Property="HorizontalAlignment" Value="Left" />
+            <Setter Property="FontFamily" Value="Comic Sans MS"/>
+            <Setter Property="FontSize" Value="22"/>
+            <Setter Property="Height" Value="27"/>
+            <Setter Property="Width" Value="190"/>
+            <Setter Property="Margin" Value="15 0 0 20"/>
+        </Style>
+        <Style TargetType="TextBox">
+            <Setter Property="HorizontalAlignment" Value="Right" />
+            <Setter Property="FontFamily" Value="Times New Roman"/>
+            <Setter Property="Margin" Value="0 10 10 10"/>
+            <Setter Property="FontSize" Value="30"/>
+            <Setter Property="Height" Value="27"/>
+            <Setter Property="Width" Value="190"/>
+            <Setter Property="Padding" Value="10 0 0 5"/>
+        </Style>
+        <Style TargetType="Button">
+            <Setter Property="HorizontalAlignment" Value="Right" />
+            <Setter Property="FontFamily" Value="Times New Roman"/>
+            <Setter Property="Margin" Value="10 30"/>
+            <Setter Property="FontSize" Value="22"/>
+            <Setter Property="Width" Value="180"/>
+            <Setter Property="VerticalAlignment" Value="Bottom"/>
+
+        </Style>
+    </Page.Resources>
+    <Grid> 
+        
+        <Grid.Background>
+        <ImageBrush Stretch="None"
+                        ImageSource="/Assets/6.jpg" 
+                        AlignmentY="Top"
+                        AlignmentX="Center"/>
+        </Grid.Background>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+      
+        <Button x:ConnectionId='1' Content="See on the map"
+                VerticalAlignment="Top"
+                Grid.Row="0"
+                                     
+                HorizontalAlignment="Left"/>
+        
+        <TextBlock x:ConnectionId='2' Text="Tap here to see the picture"
+                VerticalAlignment="Top"
+                                    
+                Grid.Row="1"
+                Height="40"
+                Width="350"
+                FontSize="24"
+                FontStyle="Italic"
+                HorizontalAlignment="Left"/>
+        
+        <TextBlock  Text="Car:"
+                    Grid.Row="1"
+                    VerticalAlignment="Bottom"/>
+
+        <TextBlock Text="{Binding User.Car, Mode=TwoWay}"
+                   HorizontalAlignment="Right"
+                   VerticalAlignment="Bottom"
+                    Grid.Row="1"/>
+
+        <TextBlock HorizontalAlignment="Left"
+                   VerticalAlignment="Center"
+                   Height="40"
+                   Text="Distance:"
+                    Grid.Row="2"/>
+        
+        <TextBlock FontSize="32"
+                   Height="40"
+                   HorizontalAlignment="Right"
+                   VerticalAlignment="Center"
+                   Text="0"
+                   Name="dist"
+                   Grid.Row="2"
+                   />
+        
+        <TextBlock  Text="Additional Info:"
+                    Grid.Row="3"/>
+
+        <TextBlock Text="{Binding User.MoreInfo, Mode=TwoWay}"
+                   HorizontalAlignment="Right"
+                    Grid.Row="3"/>
+        
+        <Button x:ConnectionId='3' Content="Car found!"
+                VerticalAlignment="Bottom"
+                FontSize="38"
+                Grid.Row="4"
+                HorizontalAlignment="Center"
+                Width="250"
+                Height="80"
+                                      />
+
+
+    </Grid>
+</Page>
+

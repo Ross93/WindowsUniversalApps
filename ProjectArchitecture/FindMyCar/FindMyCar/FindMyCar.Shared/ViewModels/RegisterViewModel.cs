@@ -32,15 +32,15 @@ namespace FindMyCar.ViewModels
             string car = this.User.Car;
             bool isCarLeft = false;
 
-            //      //validation
+            //Validation
 
-            if ( userName == null || userName.Length <3)
+            if (userName == null || userName.Length < 3)
             {
                 var msgDialog = new MessageDialog("Username must be more than 2 chars.");
                 await msgDialog.ShowAsync();
                 return false;
             }
-            else if (password== null || repeatPassword == null || password != repeatPassword )
+            else if (password == null || repeatPassword == null || password != repeatPassword)
             {
                 var msgDialog = new MessageDialog("Passwords didn`t match.");
                 await msgDialog.ShowAsync();
@@ -52,7 +52,7 @@ namespace FindMyCar.ViewModels
                 await msgDialog.ShowAsync();
                 return false;
             }
-            else if ( car == null || car.Length <= 3)
+            else if (car == null || car.Length <= 3)
             {
                 var msgDialog = new MessageDialog("Wrong car number.");
                 await msgDialog.ShowAsync();
@@ -68,7 +68,6 @@ namespace FindMyCar.ViewModels
                     Email = email
                 };
 
-                // other fields can be set just like with ParseObject
                 user["Car"] = car;
                 user["IsCarLeft"] = isCarLeft;
 

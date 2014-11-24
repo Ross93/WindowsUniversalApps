@@ -6,8 +6,24 @@
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
+    <Page.Resources>
+        <Style TargetType="Button">
+        
+            <Setter Property="FontFamily" Value="Times New Roman"/>
+            <Setter Property="Margin" Value="10 15"/>
+            <Setter Property="FontSize" Value="28"/>
+            <Setter Property="Width" Value="180"/>
+            <Setter Property="VerticalAlignment" Value="Bottom"/>
 
-    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        </Style>
+    </Page.Resources>
+    <Grid  Holding="showHistory_hold">
+        <Grid.Background>
+            <ImageBrush Stretch="None"
+                        ImageSource="/Assets/6.jpg" 
+                        AlignmentY="Top"
+                        AlignmentX="Center"/>
+        </Grid.Background>
         <Grid.RowDefinitions>
             <RowDefinition Height="0.2*"/>
             <RowDefinition Height="0.2*"/>
@@ -15,30 +31,34 @@
         </Grid.RowDefinitions>
         <Button Content="Sign Out"
                  Grid.Row="0"
-                FontSize="20"
                 BorderThickness="0"
                 VerticalAlignment="Top"
                 HorizontalAlignment="Right"
-                Margin="10 5"
-                Click="Sign_out"
-                FontFamily="Times New Roman"/>
-        <Button Content="Send another SMS"
-                 Grid.Row="0"
-                FontSize="20"
+                Click="Sign_out"/>
+        <Button Content="Send SMS"
+                Grid.Row="0"
                 BorderThickness="0"
                 VerticalAlignment="Top"
                 HorizontalAlignment="Left"
+                Click="SendSms"/>
+
+        <TextBlock Text="Long press to see the History"
+                VerticalAlignment="Top"
+                HorizontalAlignment="Center"
+                Margin="0,39,30,0"
+                FontStyle="Italic"
                 FontFamily="Times New Roman"
-                Click="SendSms"
-                Margin="10 5"/>
+                FontSize="30"
+                Grid.Row="2" />
         <Button Content="Find Car"
                  Grid.Row="2"
                 FontSize="40"
                 Width="280"
                 Height="80"
                 HorizontalAlignment="Center"
-                Margin="10"
-                FontFamily="Times New Roman"
+                Margin="60"
+                Foreground="LightBlue"
+                VerticalAlignment="Bottom"
                 Click="findCar"/>
     </Grid>
 </Page>

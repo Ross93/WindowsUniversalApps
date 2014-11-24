@@ -1,0 +1,1 @@
+C:\Users\Росица\Desktop\ProjectArchitecture\FindMyCar\FindMyCar\FindMyCar.Windows\FindMyCar.Windows.csproj;x86

@@ -17,7 +17,7 @@ namespace FindMyCar.ViewModels
     {
         public UserViewModel User { get; set; }
 
-        public const string dbName = "CarLeftsDataBase1.db";
+        public const string dbName = "CarLeftsDataBase3.db";
 
         public List<CarLeftModel> carLefts { get; set; }
 
@@ -26,7 +26,7 @@ namespace FindMyCar.ViewModels
         {
             this.User = new UserViewModel()
             {
-             
+
             };
         }
 
@@ -77,7 +77,7 @@ namespace FindMyCar.ViewModels
 
                 string moreInfo = this.User.MoreInfo;
 
-                if (this.User.MoreInfo!= null)
+                if (this.User.MoreInfo != null)
                 {
                     user["MoreInfo"] = this.User.MoreInfo;
                 }
@@ -95,28 +95,28 @@ namespace FindMyCar.ViewModels
                 var msgDialog = new MessageDialog("Operation was successful!");
                 await msgDialog.ShowAsync();
 
-                
+
 
                 // Get Articles
                 SQLiteAsyncConnection conn = new SQLiteAsyncConnection(dbName);
                 var query = conn.Table<CarLeftModel>();
                 var lefts = await query.ToListAsync();
                 // int a = 5;
-                //
 
-            
+
             }
             catch (UnauthorizedAccessException)
             {
-                 showMessage();
+                showMessage();
                 // the app does not have the right capability or the location master switch is off 
                 //  StatusTextBlock.Text = "location is disabled in phone settings.";
             }
         }
 
-        private async Task showMessage() { 
-          var msgDialog = new MessageDialog("Info cannot be added to the database.");
-                await msgDialog.ShowAsync();
+        private async void showMessage()
+        {
+            var msgDialog = new MessageDialog("Info cannot be added to the database.");
+            await msgDialog.ShowAsync();
         }
 
         private async Task AddCarLeavesAsync(double latitude, double longitude)
@@ -152,6 +152,11 @@ namespace FindMyCar.ViewModels
 
             return dbExist;
         }
+
+        internal async Task showSMSMessage()
+        {
+            var msgDialog = new MessageDialog("SMS sent");
+            await msgDialog.ShowAsync();
+        }
     }
 }
- 

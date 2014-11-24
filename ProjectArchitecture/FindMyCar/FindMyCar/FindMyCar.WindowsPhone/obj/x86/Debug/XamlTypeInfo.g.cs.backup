@@ -124,7 +124,7 @@ namespace FindMyCar.FindMyCar_WindowsPhone_XamlTypeInfo
 
         private void InitTypeTables()
         {
-            _typeNameTable = new string[26];
+            _typeNameTable = new string[30];
             _typeNameTable[0] = "FindMyCar.Pages.MapView";
             _typeNameTable[1] = "Windows.UI.Xaml.Controls.Page";
             _typeNameTable[2] = "Windows.UI.Xaml.Controls.UserControl";
@@ -139,20 +139,24 @@ namespace FindMyCar.FindMyCar_WindowsPhone_XamlTypeInfo
             _typeNameTable[11] = "FindMyCar.ViewModels.CarFoundViewModel";
             _typeNameTable[12] = "FindMyCar.Pages.CarLeftView";
             _typeNameTable[13] = "FindMyCar.ViewModels.CarLeftViewModel";
-            _typeNameTable[14] = "FindMyCar.Pages.FindCarView";
-            _typeNameTable[15] = "FindMyCar.ViewModels.FindCarViewModel";
-            _typeNameTable[16] = "FindMyCar.Pages.LeaveCarView";
-            _typeNameTable[17] = "FindMyCar.ViewModels.LeaveCarViewModel";
-            _typeNameTable[18] = "FindMyCar.MainPage";
-            _typeNameTable[19] = "FindMyCar.ViewModels.MainPageViewModel";
-            _typeNameTable[20] = "GalaSoft.MvvmLight.ViewModelBase";
-            _typeNameTable[21] = "GalaSoft.MvvmLight.ObservableObject";
-            _typeNameTable[22] = "FindMyCar.Pages.PictureView";
-            _typeNameTable[23] = "FindMyCar.ViewModels.PictureViewModel";
-            _typeNameTable[24] = "FindMyCar.Pages.RegisterView";
-            _typeNameTable[25] = "FindMyCar.ViewModels.RegisterViewModel";
+            _typeNameTable[14] = "FindMyCar.Pages.ChangeCarView";
+            _typeNameTable[15] = "FindMyCar.ViewModels.ChangeCarViewModel";
+            _typeNameTable[16] = "FindMyCar.Pages.FindCarView";
+            _typeNameTable[17] = "FindMyCar.ViewModels.FindCarViewModel";
+            _typeNameTable[18] = "FindMyCar.Pages.HistoryView";
+            _typeNameTable[19] = "FindMyCar.ViewModels.HistoryViewModel";
+            _typeNameTable[20] = "FindMyCar.Pages.LeaveCarView";
+            _typeNameTable[21] = "FindMyCar.ViewModels.LeaveCarViewModel";
+            _typeNameTable[22] = "FindMyCar.MainPage";
+            _typeNameTable[23] = "FindMyCar.ViewModels.MainPageViewModel";
+            _typeNameTable[24] = "GalaSoft.MvvmLight.ViewModelBase";
+            _typeNameTable[25] = "GalaSoft.MvvmLight.ObservableObject";
+            _typeNameTable[26] = "FindMyCar.Pages.PictureView";
+            _typeNameTable[27] = "FindMyCar.ViewModels.PictureViewModel";
+            _typeNameTable[28] = "FindMyCar.Pages.RegisterView";
+            _typeNameTable[29] = "FindMyCar.ViewModels.RegisterViewModel";
 
-            _typeTable = new global::System.Type[26];
+            _typeTable = new global::System.Type[30];
             _typeTable[0] = typeof(global::FindMyCar.Pages.MapView);
             _typeTable[1] = typeof(global::Windows.UI.Xaml.Controls.Page);
             _typeTable[2] = typeof(global::Windows.UI.Xaml.Controls.UserControl);
@@ -167,18 +171,22 @@ namespace FindMyCar.FindMyCar_WindowsPhone_XamlTypeInfo
             _typeTable[11] = typeof(global::FindMyCar.ViewModels.CarFoundViewModel);
             _typeTable[12] = typeof(global::FindMyCar.Pages.CarLeftView);
             _typeTable[13] = typeof(global::FindMyCar.ViewModels.CarLeftViewModel);
-            _typeTable[14] = typeof(global::FindMyCar.Pages.FindCarView);
-            _typeTable[15] = typeof(global::FindMyCar.ViewModels.FindCarViewModel);
-            _typeTable[16] = typeof(global::FindMyCar.Pages.LeaveCarView);
-            _typeTable[17] = typeof(global::FindMyCar.ViewModels.LeaveCarViewModel);
-            _typeTable[18] = typeof(global::FindMyCar.MainPage);
-            _typeTable[19] = typeof(global::FindMyCar.ViewModels.MainPageViewModel);
-            _typeTable[20] = typeof(global::GalaSoft.MvvmLight.ViewModelBase);
-            _typeTable[21] = typeof(global::GalaSoft.MvvmLight.ObservableObject);
-            _typeTable[22] = typeof(global::FindMyCar.Pages.PictureView);
-            _typeTable[23] = typeof(global::FindMyCar.ViewModels.PictureViewModel);
-            _typeTable[24] = typeof(global::FindMyCar.Pages.RegisterView);
-            _typeTable[25] = typeof(global::FindMyCar.ViewModels.RegisterViewModel);
+            _typeTable[14] = typeof(global::FindMyCar.Pages.ChangeCarView);
+            _typeTable[15] = typeof(global::FindMyCar.ViewModels.ChangeCarViewModel);
+            _typeTable[16] = typeof(global::FindMyCar.Pages.FindCarView);
+            _typeTable[17] = typeof(global::FindMyCar.ViewModels.FindCarViewModel);
+            _typeTable[18] = typeof(global::FindMyCar.Pages.HistoryView);
+            _typeTable[19] = typeof(global::FindMyCar.ViewModels.HistoryViewModel);
+            _typeTable[20] = typeof(global::FindMyCar.Pages.LeaveCarView);
+            _typeTable[21] = typeof(global::FindMyCar.ViewModels.LeaveCarViewModel);
+            _typeTable[22] = typeof(global::FindMyCar.MainPage);
+            _typeTable[23] = typeof(global::FindMyCar.ViewModels.MainPageViewModel);
+            _typeTable[24] = typeof(global::GalaSoft.MvvmLight.ViewModelBase);
+            _typeTable[25] = typeof(global::GalaSoft.MvvmLight.ObservableObject);
+            _typeTable[26] = typeof(global::FindMyCar.Pages.PictureView);
+            _typeTable[27] = typeof(global::FindMyCar.ViewModels.PictureViewModel);
+            _typeTable[28] = typeof(global::FindMyCar.Pages.RegisterView);
+            _typeTable[29] = typeof(global::FindMyCar.ViewModels.RegisterViewModel);
         }
 
         private int LookupTypeIndexByName(string typeName)
@@ -220,17 +228,21 @@ namespace FindMyCar.FindMyCar_WindowsPhone_XamlTypeInfo
         private object Activate_11_CarFoundViewModel() { return new global::FindMyCar.ViewModels.CarFoundViewModel(); }
         private object Activate_12_CarLeftView() { return new global::FindMyCar.Pages.CarLeftView(); }
         private object Activate_13_CarLeftViewModel() { return new global::FindMyCar.ViewModels.CarLeftViewModel(); }
-        private object Activate_14_FindCarView() { return new global::FindMyCar.Pages.FindCarView(); }
-        private object Activate_15_FindCarViewModel() { return new global::FindMyCar.ViewModels.FindCarViewModel(); }
-        private object Activate_16_LeaveCarView() { return new global::FindMyCar.Pages.LeaveCarView(); }
-        private object Activate_17_LeaveCarViewModel() { return new global::FindMyCar.ViewModels.LeaveCarViewModel(); }
-        private object Activate_18_MainPage() { return new global::FindMyCar.MainPage(); }
-        private object Activate_19_MainPageViewModel() { return new global::FindMyCar.ViewModels.MainPageViewModel(); }
-        private object Activate_21_ObservableObject() { return new global::GalaSoft.MvvmLight.ObservableObject(); }
-        private object Activate_22_PictureView() { return new global::FindMyCar.Pages.PictureView(); }
-        private object Activate_23_PictureViewModel() { return new global::FindMyCar.ViewModels.PictureViewModel(); }
-        private object Activate_24_RegisterView() { return new global::FindMyCar.Pages.RegisterView(); }
-        private object Activate_25_RegisterViewModel() { return new global::FindMyCar.ViewModels.RegisterViewModel(); }
+        private object Activate_14_ChangeCarView() { return new global::FindMyCar.Pages.ChangeCarView(); }
+        private object Activate_15_ChangeCarViewModel() { return new global::FindMyCar.ViewModels.ChangeCarViewModel(); }
+        private object Activate_16_FindCarView() { return new global::FindMyCar.Pages.FindCarView(); }
+        private object Activate_17_FindCarViewModel() { return new global::FindMyCar.ViewModels.FindCarViewModel(); }
+        private object Activate_18_HistoryView() { return new global::FindMyCar.Pages.HistoryView(); }
+        private object Activate_19_HistoryViewModel() { return new global::FindMyCar.ViewModels.HistoryViewModel(); }
+        private object Activate_20_LeaveCarView() { return new global::FindMyCar.Pages.LeaveCarView(); }
+        private object Activate_21_LeaveCarViewModel() { return new global::FindMyCar.ViewModels.LeaveCarViewModel(); }
+        private object Activate_22_MainPage() { return new global::FindMyCar.MainPage(); }
+        private object Activate_23_MainPageViewModel() { return new global::FindMyCar.ViewModels.MainPageViewModel(); }
+        private object Activate_25_ObservableObject() { return new global::GalaSoft.MvvmLight.ObservableObject(); }
+        private object Activate_26_PictureView() { return new global::FindMyCar.Pages.PictureView(); }
+        private object Activate_27_PictureViewModel() { return new global::FindMyCar.ViewModels.PictureViewModel(); }
+        private object Activate_28_RegisterView() { return new global::FindMyCar.Pages.RegisterView(); }
+        private object Activate_29_RegisterViewModel() { return new global::FindMyCar.ViewModels.RegisterViewModel(); }
         private void MapAdd_5_ObservableDictionary(object instance, object key, object item)
         {
             var collection = (global::System.Collections.Generic.IDictionary<global::System.String, global::System.Object>)instance;
@@ -304,6 +316,8 @@ namespace FindMyCar.FindMyCar_WindowsPhone_XamlTypeInfo
                 userType.Activator = Activate_8_CarFoundView;
                 userType.AddMemberName("receivedCoords");
                 userType.AddMemberName("ViewModel");
+                userType.AddMemberName("NavigationHelper");
+                userType.AddMemberName("DefaultViewModel");
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
@@ -330,6 +344,8 @@ namespace FindMyCar.FindMyCar_WindowsPhone_XamlTypeInfo
                 userType = new global::FindMyCar.FindMyCar_WindowsPhone_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
                 userType.Activator = Activate_12_CarLeftView;
                 userType.AddMemberName("ViewModel");
+                userType.AddMemberName("NavigationHelper");
+                userType.AddMemberName("DefaultViewModel");
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
@@ -341,65 +357,9 @@ namespace FindMyCar.FindMyCar_WindowsPhone_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 14:   //  FindMyCar.Pages.FindCarView
+            case 14:   //  FindMyCar.Pages.ChangeCarView
                 userType = new global::FindMyCar.FindMyCar_WindowsPhone_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_14_FindCarView;
-                userType.AddMemberName("ViewModel");
-                userType.SetIsLocalType();
-                xamlType = userType;
-                break;
-
-            case 15:   //  FindMyCar.ViewModels.FindCarViewModel
-                userType = new global::FindMyCar.FindMyCar_WindowsPhone_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
-                userType.SetIsReturnTypeStub();
-                userType.SetIsLocalType();
-                xamlType = userType;
-                break;
-
-            case 16:   //  FindMyCar.Pages.LeaveCarView
-                userType = new global::FindMyCar.FindMyCar_WindowsPhone_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_16_LeaveCarView;
-                userType.AddMemberName("ViewModel");
-                userType.SetIsLocalType();
-                xamlType = userType;
-                break;
-
-            case 17:   //  FindMyCar.ViewModels.LeaveCarViewModel
-                userType = new global::FindMyCar.FindMyCar_WindowsPhone_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
-                userType.SetIsReturnTypeStub();
-                userType.SetIsLocalType();
-                xamlType = userType;
-                break;
-
-            case 18:   //  FindMyCar.MainPage
-                userType = new global::FindMyCar.FindMyCar_WindowsPhone_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_18_MainPage;
-                userType.AddMemberName("ViewModel");
-                userType.SetIsLocalType();
-                xamlType = userType;
-                break;
-
-            case 19:   //  FindMyCar.ViewModels.MainPageViewModel
-                userType = new global::FindMyCar.FindMyCar_WindowsPhone_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("GalaSoft.MvvmLight.ViewModelBase"));
-                userType.SetIsReturnTypeStub();
-                userType.SetIsLocalType();
-                xamlType = userType;
-                break;
-
-            case 20:   //  GalaSoft.MvvmLight.ViewModelBase
-                userType = new global::FindMyCar.FindMyCar_WindowsPhone_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("GalaSoft.MvvmLight.ObservableObject"));
-                xamlType = userType;
-                break;
-
-            case 21:   //  GalaSoft.MvvmLight.ObservableObject
-                userType = new global::FindMyCar.FindMyCar_WindowsPhone_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
-                userType.Activator = Activate_21_ObservableObject;
-                xamlType = userType;
-                break;
-
-            case 22:   //  FindMyCar.Pages.PictureView
-                userType = new global::FindMyCar.FindMyCar_WindowsPhone_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_22_PictureView;
+                userType.Activator = Activate_14_ChangeCarView;
                 userType.AddMemberName("NavigationHelper");
                 userType.AddMemberName("DefaultViewModel");
                 userType.AddMemberName("ViewModel");
@@ -407,22 +367,118 @@ namespace FindMyCar.FindMyCar_WindowsPhone_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 23:   //  FindMyCar.ViewModels.PictureViewModel
+            case 15:   //  FindMyCar.ViewModels.ChangeCarViewModel
                 userType = new global::FindMyCar.FindMyCar_WindowsPhone_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
                 userType.SetIsReturnTypeStub();
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 24:   //  FindMyCar.Pages.RegisterView
+            case 16:   //  FindMyCar.Pages.FindCarView
                 userType = new global::FindMyCar.FindMyCar_WindowsPhone_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_24_RegisterView;
+                userType.Activator = Activate_16_FindCarView;
+                userType.AddMemberName("NavigationHelper");
+                userType.AddMemberName("DefaultViewModel");
                 userType.AddMemberName("ViewModel");
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 25:   //  FindMyCar.ViewModels.RegisterViewModel
+            case 17:   //  FindMyCar.ViewModels.FindCarViewModel
+                userType = new global::FindMyCar.FindMyCar_WindowsPhone_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
+                userType.SetIsReturnTypeStub();
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 18:   //  FindMyCar.Pages.HistoryView
+                userType = new global::FindMyCar.FindMyCar_WindowsPhone_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
+                userType.Activator = Activate_18_HistoryView;
+                userType.AddMemberName("NavigationHelper");
+                userType.AddMemberName("DefaultViewModel");
+                userType.AddMemberName("ViewModel");
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 19:   //  FindMyCar.ViewModels.HistoryViewModel
+                userType = new global::FindMyCar.FindMyCar_WindowsPhone_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
+                userType.SetIsReturnTypeStub();
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 20:   //  FindMyCar.Pages.LeaveCarView
+                userType = new global::FindMyCar.FindMyCar_WindowsPhone_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
+                userType.Activator = Activate_20_LeaveCarView;
+                userType.AddMemberName("NavigationHelper");
+                userType.AddMemberName("DefaultViewModel");
+                userType.AddMemberName("ViewModel");
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 21:   //  FindMyCar.ViewModels.LeaveCarViewModel
+                userType = new global::FindMyCar.FindMyCar_WindowsPhone_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
+                userType.SetIsReturnTypeStub();
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 22:   //  FindMyCar.MainPage
+                userType = new global::FindMyCar.FindMyCar_WindowsPhone_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
+                userType.Activator = Activate_22_MainPage;
+                userType.AddMemberName("ViewModel");
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 23:   //  FindMyCar.ViewModels.MainPageViewModel
+                userType = new global::FindMyCar.FindMyCar_WindowsPhone_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("GalaSoft.MvvmLight.ViewModelBase"));
+                userType.SetIsReturnTypeStub();
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 24:   //  GalaSoft.MvvmLight.ViewModelBase
+                userType = new global::FindMyCar.FindMyCar_WindowsPhone_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("GalaSoft.MvvmLight.ObservableObject"));
+                xamlType = userType;
+                break;
+
+            case 25:   //  GalaSoft.MvvmLight.ObservableObject
+                userType = new global::FindMyCar.FindMyCar_WindowsPhone_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
+                userType.Activator = Activate_25_ObservableObject;
+                xamlType = userType;
+                break;
+
+            case 26:   //  FindMyCar.Pages.PictureView
+                userType = new global::FindMyCar.FindMyCar_WindowsPhone_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
+                userType.Activator = Activate_26_PictureView;
+                userType.AddMemberName("NavigationHelper");
+                userType.AddMemberName("DefaultViewModel");
+                userType.AddMemberName("ViewModel");
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 27:   //  FindMyCar.ViewModels.PictureViewModel
+                userType = new global::FindMyCar.FindMyCar_WindowsPhone_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
+                userType.SetIsReturnTypeStub();
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 28:   //  FindMyCar.Pages.RegisterView
+                userType = new global::FindMyCar.FindMyCar_WindowsPhone_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
+                userType.Activator = Activate_28_RegisterView;
+                userType.AddMemberName("ViewModel");
+                userType.AddMemberName("NavigationHelper");
+                userType.AddMemberName("DefaultViewModel");
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 29:   //  FindMyCar.ViewModels.RegisterViewModel
                 userType = new global::FindMyCar.FindMyCar_WindowsPhone_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("GalaSoft.MvvmLight.ViewModelBase"));
                 userType.SetIsReturnTypeStub();
                 userType.SetIsLocalType();
@@ -463,75 +519,165 @@ namespace FindMyCar.FindMyCar_WindowsPhone_XamlTypeInfo
             var that = (global::FindMyCar.Pages.CarFoundView)instance;
             that.ViewModel = (global::FindMyCar.ViewModels.CarFoundViewModel)Value;
         }
-        private object get_4_CarLeftView_ViewModel(object instance)
+        private object get_4_CarFoundView_NavigationHelper(object instance)
+        {
+            var that = (global::FindMyCar.Pages.CarFoundView)instance;
+            return that.NavigationHelper;
+        }
+        private object get_5_CarFoundView_DefaultViewModel(object instance)
+        {
+            var that = (global::FindMyCar.Pages.CarFoundView)instance;
+            return that.DefaultViewModel;
+        }
+        private object get_6_CarLeftView_ViewModel(object instance)
         {
             var that = (global::FindMyCar.Pages.CarLeftView)instance;
             return that.ViewModel;
         }
-        private void set_4_CarLeftView_ViewModel(object instance, object Value)
+        private void set_6_CarLeftView_ViewModel(object instance, object Value)
         {
             var that = (global::FindMyCar.Pages.CarLeftView)instance;
             that.ViewModel = (global::FindMyCar.ViewModels.CarLeftViewModel)Value;
         }
-        private object get_5_FindCarView_ViewModel(object instance)
+        private object get_7_CarLeftView_NavigationHelper(object instance)
+        {
+            var that = (global::FindMyCar.Pages.CarLeftView)instance;
+            return that.NavigationHelper;
+        }
+        private object get_8_CarLeftView_DefaultViewModel(object instance)
+        {
+            var that = (global::FindMyCar.Pages.CarLeftView)instance;
+            return that.DefaultViewModel;
+        }
+        private object get_9_ChangeCarView_NavigationHelper(object instance)
+        {
+            var that = (global::FindMyCar.Pages.ChangeCarView)instance;
+            return that.NavigationHelper;
+        }
+        private object get_10_ChangeCarView_DefaultViewModel(object instance)
+        {
+            var that = (global::FindMyCar.Pages.ChangeCarView)instance;
+            return that.DefaultViewModel;
+        }
+        private object get_11_ChangeCarView_ViewModel(object instance)
+        {
+            var that = (global::FindMyCar.Pages.ChangeCarView)instance;
+            return that.ViewModel;
+        }
+        private void set_11_ChangeCarView_ViewModel(object instance, object Value)
+        {
+            var that = (global::FindMyCar.Pages.ChangeCarView)instance;
+            that.ViewModel = (global::FindMyCar.ViewModels.ChangeCarViewModel)Value;
+        }
+        private object get_12_FindCarView_NavigationHelper(object instance)
+        {
+            var that = (global::FindMyCar.Pages.FindCarView)instance;
+            return that.NavigationHelper;
+        }
+        private object get_13_FindCarView_DefaultViewModel(object instance)
+        {
+            var that = (global::FindMyCar.Pages.FindCarView)instance;
+            return that.DefaultViewModel;
+        }
+        private object get_14_FindCarView_ViewModel(object instance)
         {
             var that = (global::FindMyCar.Pages.FindCarView)instance;
             return that.ViewModel;
         }
-        private void set_5_FindCarView_ViewModel(object instance, object Value)
+        private void set_14_FindCarView_ViewModel(object instance, object Value)
         {
             var that = (global::FindMyCar.Pages.FindCarView)instance;
             that.ViewModel = (global::FindMyCar.ViewModels.FindCarViewModel)Value;
         }
-        private object get_6_LeaveCarView_ViewModel(object instance)
+        private object get_15_HistoryView_NavigationHelper(object instance)
+        {
+            var that = (global::FindMyCar.Pages.HistoryView)instance;
+            return that.NavigationHelper;
+        }
+        private object get_16_HistoryView_DefaultViewModel(object instance)
+        {
+            var that = (global::FindMyCar.Pages.HistoryView)instance;
+            return that.DefaultViewModel;
+        }
+        private object get_17_HistoryView_ViewModel(object instance)
+        {
+            var that = (global::FindMyCar.Pages.HistoryView)instance;
+            return that.ViewModel;
+        }
+        private void set_17_HistoryView_ViewModel(object instance, object Value)
+        {
+            var that = (global::FindMyCar.Pages.HistoryView)instance;
+            that.ViewModel = (global::FindMyCar.ViewModels.HistoryViewModel)Value;
+        }
+        private object get_18_LeaveCarView_NavigationHelper(object instance)
+        {
+            var that = (global::FindMyCar.Pages.LeaveCarView)instance;
+            return that.NavigationHelper;
+        }
+        private object get_19_LeaveCarView_DefaultViewModel(object instance)
+        {
+            var that = (global::FindMyCar.Pages.LeaveCarView)instance;
+            return that.DefaultViewModel;
+        }
+        private object get_20_LeaveCarView_ViewModel(object instance)
         {
             var that = (global::FindMyCar.Pages.LeaveCarView)instance;
             return that.ViewModel;
         }
-        private void set_6_LeaveCarView_ViewModel(object instance, object Value)
+        private void set_20_LeaveCarView_ViewModel(object instance, object Value)
         {
             var that = (global::FindMyCar.Pages.LeaveCarView)instance;
             that.ViewModel = (global::FindMyCar.ViewModels.LeaveCarViewModel)Value;
         }
-        private object get_7_MainPage_ViewModel(object instance)
+        private object get_21_MainPage_ViewModel(object instance)
         {
             var that = (global::FindMyCar.MainPage)instance;
             return that.ViewModel;
         }
-        private void set_7_MainPage_ViewModel(object instance, object Value)
+        private void set_21_MainPage_ViewModel(object instance, object Value)
         {
             var that = (global::FindMyCar.MainPage)instance;
             that.ViewModel = (global::FindMyCar.ViewModels.MainPageViewModel)Value;
         }
-        private object get_8_PictureView_NavigationHelper(object instance)
+        private object get_22_PictureView_NavigationHelper(object instance)
         {
             var that = (global::FindMyCar.Pages.PictureView)instance;
             return that.NavigationHelper;
         }
-        private object get_9_PictureView_DefaultViewModel(object instance)
+        private object get_23_PictureView_DefaultViewModel(object instance)
         {
             var that = (global::FindMyCar.Pages.PictureView)instance;
             return that.DefaultViewModel;
         }
-        private object get_10_PictureView_ViewModel(object instance)
+        private object get_24_PictureView_ViewModel(object instance)
         {
             var that = (global::FindMyCar.Pages.PictureView)instance;
             return that.ViewModel;
         }
-        private void set_10_PictureView_ViewModel(object instance, object Value)
+        private void set_24_PictureView_ViewModel(object instance, object Value)
         {
             var that = (global::FindMyCar.Pages.PictureView)instance;
             that.ViewModel = (global::FindMyCar.ViewModels.PictureViewModel)Value;
         }
-        private object get_11_RegisterView_ViewModel(object instance)
+        private object get_25_RegisterView_ViewModel(object instance)
         {
             var that = (global::FindMyCar.Pages.RegisterView)instance;
             return that.ViewModel;
         }
-        private void set_11_RegisterView_ViewModel(object instance, object Value)
+        private void set_25_RegisterView_ViewModel(object instance, object Value)
         {
             var that = (global::FindMyCar.Pages.RegisterView)instance;
             that.ViewModel = (global::FindMyCar.ViewModels.RegisterViewModel)Value;
+        }
+        private object get_26_RegisterView_NavigationHelper(object instance)
+        {
+            var that = (global::FindMyCar.Pages.RegisterView)instance;
+            return that.NavigationHelper;
+        }
+        private object get_27_RegisterView_DefaultViewModel(object instance)
+        {
+            var that = (global::FindMyCar.Pages.RegisterView)instance;
+            return that.DefaultViewModel;
         }
 
         private global::Windows.UI.Xaml.Markup.IXamlMember CreateXamlMember(string longMemberName)
@@ -565,53 +711,149 @@ namespace FindMyCar.FindMyCar_WindowsPhone_XamlTypeInfo
                 xamlMember.Getter = get_3_CarFoundView_ViewModel;
                 xamlMember.Setter = set_3_CarFoundView_ViewModel;
                 break;
+            case "FindMyCar.Pages.CarFoundView.NavigationHelper":
+                userType = (global::FindMyCar.FindMyCar_WindowsPhone_XamlTypeInfo.XamlUserType)GetXamlTypeByName("FindMyCar.Pages.CarFoundView");
+                xamlMember = new global::FindMyCar.FindMyCar_WindowsPhone_XamlTypeInfo.XamlMember(this, "NavigationHelper", "FindMyCar.Common.NavigationHelper");
+                xamlMember.Getter = get_4_CarFoundView_NavigationHelper;
+                xamlMember.SetIsReadOnly();
+                break;
+            case "FindMyCar.Pages.CarFoundView.DefaultViewModel":
+                userType = (global::FindMyCar.FindMyCar_WindowsPhone_XamlTypeInfo.XamlUserType)GetXamlTypeByName("FindMyCar.Pages.CarFoundView");
+                xamlMember = new global::FindMyCar.FindMyCar_WindowsPhone_XamlTypeInfo.XamlMember(this, "DefaultViewModel", "FindMyCar.Common.ObservableDictionary");
+                xamlMember.Getter = get_5_CarFoundView_DefaultViewModel;
+                xamlMember.SetIsReadOnly();
+                break;
             case "FindMyCar.Pages.CarLeftView.ViewModel":
                 userType = (global::FindMyCar.FindMyCar_WindowsPhone_XamlTypeInfo.XamlUserType)GetXamlTypeByName("FindMyCar.Pages.CarLeftView");
                 xamlMember = new global::FindMyCar.FindMyCar_WindowsPhone_XamlTypeInfo.XamlMember(this, "ViewModel", "FindMyCar.ViewModels.CarLeftViewModel");
-                xamlMember.Getter = get_4_CarLeftView_ViewModel;
-                xamlMember.Setter = set_4_CarLeftView_ViewModel;
+                xamlMember.Getter = get_6_CarLeftView_ViewModel;
+                xamlMember.Setter = set_6_CarLeftView_ViewModel;
+                break;
+            case "FindMyCar.Pages.CarLeftView.NavigationHelper":
+                userType = (global::FindMyCar.FindMyCar_WindowsPhone_XamlTypeInfo.XamlUserType)GetXamlTypeByName("FindMyCar.Pages.CarLeftView");
+                xamlMember = new global::FindMyCar.FindMyCar_WindowsPhone_XamlTypeInfo.XamlMember(this, "NavigationHelper", "FindMyCar.Common.NavigationHelper");
+                xamlMember.Getter = get_7_CarLeftView_NavigationHelper;
+                xamlMember.SetIsReadOnly();
+                break;
+            case "FindMyCar.Pages.CarLeftView.DefaultViewModel":
+                userType = (global::FindMyCar.FindMyCar_WindowsPhone_XamlTypeInfo.XamlUserType)GetXamlTypeByName("FindMyCar.Pages.CarLeftView");
+                xamlMember = new global::FindMyCar.FindMyCar_WindowsPhone_XamlTypeInfo.XamlMember(this, "DefaultViewModel", "FindMyCar.Common.ObservableDictionary");
+                xamlMember.Getter = get_8_CarLeftView_DefaultViewModel;
+                xamlMember.SetIsReadOnly();
+                break;
+            case "FindMyCar.Pages.ChangeCarView.NavigationHelper":
+                userType = (global::FindMyCar.FindMyCar_WindowsPhone_XamlTypeInfo.XamlUserType)GetXamlTypeByName("FindMyCar.Pages.ChangeCarView");
+                xamlMember = new global::FindMyCar.FindMyCar_WindowsPhone_XamlTypeInfo.XamlMember(this, "NavigationHelper", "FindMyCar.Common.NavigationHelper");
+                xamlMember.Getter = get_9_ChangeCarView_NavigationHelper;
+                xamlMember.SetIsReadOnly();
+                break;
+            case "FindMyCar.Pages.ChangeCarView.DefaultViewModel":
+                userType = (global::FindMyCar.FindMyCar_WindowsPhone_XamlTypeInfo.XamlUserType)GetXamlTypeByName("FindMyCar.Pages.ChangeCarView");
+                xamlMember = new global::FindMyCar.FindMyCar_WindowsPhone_XamlTypeInfo.XamlMember(this, "DefaultViewModel", "FindMyCar.Common.ObservableDictionary");
+                xamlMember.Getter = get_10_ChangeCarView_DefaultViewModel;
+                xamlMember.SetIsReadOnly();
+                break;
+            case "FindMyCar.Pages.ChangeCarView.ViewModel":
+                userType = (global::FindMyCar.FindMyCar_WindowsPhone_XamlTypeInfo.XamlUserType)GetXamlTypeByName("FindMyCar.Pages.ChangeCarView");
+                xamlMember = new global::FindMyCar.FindMyCar_WindowsPhone_XamlTypeInfo.XamlMember(this, "ViewModel", "FindMyCar.ViewModels.ChangeCarViewModel");
+                xamlMember.Getter = get_11_ChangeCarView_ViewModel;
+                xamlMember.Setter = set_11_ChangeCarView_ViewModel;
+                break;
+            case "FindMyCar.Pages.FindCarView.NavigationHelper":
+                userType = (global::FindMyCar.FindMyCar_WindowsPhone_XamlTypeInfo.XamlUserType)GetXamlTypeByName("FindMyCar.Pages.FindCarView");
+                xamlMember = new global::FindMyCar.FindMyCar_WindowsPhone_XamlTypeInfo.XamlMember(this, "NavigationHelper", "FindMyCar.Common.NavigationHelper");
+                xamlMember.Getter = get_12_FindCarView_NavigationHelper;
+                xamlMember.SetIsReadOnly();
+                break;
+            case "FindMyCar.Pages.FindCarView.DefaultViewModel":
+                userType = (global::FindMyCar.FindMyCar_WindowsPhone_XamlTypeInfo.XamlUserType)GetXamlTypeByName("FindMyCar.Pages.FindCarView");
+                xamlMember = new global::FindMyCar.FindMyCar_WindowsPhone_XamlTypeInfo.XamlMember(this, "DefaultViewModel", "FindMyCar.Common.ObservableDictionary");
+                xamlMember.Getter = get_13_FindCarView_DefaultViewModel;
+                xamlMember.SetIsReadOnly();
                 break;
             case "FindMyCar.Pages.FindCarView.ViewModel":
                 userType = (global::FindMyCar.FindMyCar_WindowsPhone_XamlTypeInfo.XamlUserType)GetXamlTypeByName("FindMyCar.Pages.FindCarView");
                 xamlMember = new global::FindMyCar.FindMyCar_WindowsPhone_XamlTypeInfo.XamlMember(this, "ViewModel", "FindMyCar.ViewModels.FindCarViewModel");
-                xamlMember.Getter = get_5_FindCarView_ViewModel;
-                xamlMember.Setter = set_5_FindCarView_ViewModel;
+                xamlMember.Getter = get_14_FindCarView_ViewModel;
+                xamlMember.Setter = set_14_FindCarView_ViewModel;
+                break;
+            case "FindMyCar.Pages.HistoryView.NavigationHelper":
+                userType = (global::FindMyCar.FindMyCar_WindowsPhone_XamlTypeInfo.XamlUserType)GetXamlTypeByName("FindMyCar.Pages.HistoryView");
+                xamlMember = new global::FindMyCar.FindMyCar_WindowsPhone_XamlTypeInfo.XamlMember(this, "NavigationHelper", "FindMyCar.Common.NavigationHelper");
+                xamlMember.Getter = get_15_HistoryView_NavigationHelper;
+                xamlMember.SetIsReadOnly();
+                break;
+            case "FindMyCar.Pages.HistoryView.DefaultViewModel":
+                userType = (global::FindMyCar.FindMyCar_WindowsPhone_XamlTypeInfo.XamlUserType)GetXamlTypeByName("FindMyCar.Pages.HistoryView");
+                xamlMember = new global::FindMyCar.FindMyCar_WindowsPhone_XamlTypeInfo.XamlMember(this, "DefaultViewModel", "FindMyCar.Common.ObservableDictionary");
+                xamlMember.Getter = get_16_HistoryView_DefaultViewModel;
+                xamlMember.SetIsReadOnly();
+                break;
+            case "FindMyCar.Pages.HistoryView.ViewModel":
+                userType = (global::FindMyCar.FindMyCar_WindowsPhone_XamlTypeInfo.XamlUserType)GetXamlTypeByName("FindMyCar.Pages.HistoryView");
+                xamlMember = new global::FindMyCar.FindMyCar_WindowsPhone_XamlTypeInfo.XamlMember(this, "ViewModel", "FindMyCar.ViewModels.HistoryViewModel");
+                xamlMember.Getter = get_17_HistoryView_ViewModel;
+                xamlMember.Setter = set_17_HistoryView_ViewModel;
+                break;
+            case "FindMyCar.Pages.LeaveCarView.NavigationHelper":
+                userType = (global::FindMyCar.FindMyCar_WindowsPhone_XamlTypeInfo.XamlUserType)GetXamlTypeByName("FindMyCar.Pages.LeaveCarView");
+                xamlMember = new global::FindMyCar.FindMyCar_WindowsPhone_XamlTypeInfo.XamlMember(this, "NavigationHelper", "FindMyCar.Common.NavigationHelper");
+                xamlMember.Getter = get_18_LeaveCarView_NavigationHelper;
+                xamlMember.SetIsReadOnly();
+                break;
+            case "FindMyCar.Pages.LeaveCarView.DefaultViewModel":
+                userType = (global::FindMyCar.FindMyCar_WindowsPhone_XamlTypeInfo.XamlUserType)GetXamlTypeByName("FindMyCar.Pages.LeaveCarView");
+                xamlMember = new global::FindMyCar.FindMyCar_WindowsPhone_XamlTypeInfo.XamlMember(this, "DefaultViewModel", "FindMyCar.Common.ObservableDictionary");
+                xamlMember.Getter = get_19_LeaveCarView_DefaultViewModel;
+                xamlMember.SetIsReadOnly();
                 break;
             case "FindMyCar.Pages.LeaveCarView.ViewModel":
                 userType = (global::FindMyCar.FindMyCar_WindowsPhone_XamlTypeInfo.XamlUserType)GetXamlTypeByName("FindMyCar.Pages.LeaveCarView");
                 xamlMember = new global::FindMyCar.FindMyCar_WindowsPhone_XamlTypeInfo.XamlMember(this, "ViewModel", "FindMyCar.ViewModels.LeaveCarViewModel");
-                xamlMember.Getter = get_6_LeaveCarView_ViewModel;
-                xamlMember.Setter = set_6_LeaveCarView_ViewModel;
+                xamlMember.Getter = get_20_LeaveCarView_ViewModel;
+                xamlMember.Setter = set_20_LeaveCarView_ViewModel;
                 break;
             case "FindMyCar.MainPage.ViewModel":
                 userType = (global::FindMyCar.FindMyCar_WindowsPhone_XamlTypeInfo.XamlUserType)GetXamlTypeByName("FindMyCar.MainPage");
                 xamlMember = new global::FindMyCar.FindMyCar_WindowsPhone_XamlTypeInfo.XamlMember(this, "ViewModel", "FindMyCar.ViewModels.MainPageViewModel");
-                xamlMember.Getter = get_7_MainPage_ViewModel;
-                xamlMember.Setter = set_7_MainPage_ViewModel;
+                xamlMember.Getter = get_21_MainPage_ViewModel;
+                xamlMember.Setter = set_21_MainPage_ViewModel;
                 break;
             case "FindMyCar.Pages.PictureView.NavigationHelper":
                 userType = (global::FindMyCar.FindMyCar_WindowsPhone_XamlTypeInfo.XamlUserType)GetXamlTypeByName("FindMyCar.Pages.PictureView");
                 xamlMember = new global::FindMyCar.FindMyCar_WindowsPhone_XamlTypeInfo.XamlMember(this, "NavigationHelper", "FindMyCar.Common.NavigationHelper");
-                xamlMember.Getter = get_8_PictureView_NavigationHelper;
+                xamlMember.Getter = get_22_PictureView_NavigationHelper;
                 xamlMember.SetIsReadOnly();
                 break;
             case "FindMyCar.Pages.PictureView.DefaultViewModel":
                 userType = (global::FindMyCar.FindMyCar_WindowsPhone_XamlTypeInfo.XamlUserType)GetXamlTypeByName("FindMyCar.Pages.PictureView");
                 xamlMember = new global::FindMyCar.FindMyCar_WindowsPhone_XamlTypeInfo.XamlMember(this, "DefaultViewModel", "FindMyCar.Common.ObservableDictionary");
-                xamlMember.Getter = get_9_PictureView_DefaultViewModel;
+                xamlMember.Getter = get_23_PictureView_DefaultViewModel;
                 xamlMember.SetIsReadOnly();
                 break;
             case "FindMyCar.Pages.PictureView.ViewModel":
                 userType = (global::FindMyCar.FindMyCar_WindowsPhone_XamlTypeInfo.XamlUserType)GetXamlTypeByName("FindMyCar.Pages.PictureView");
                 xamlMember = new global::FindMyCar.FindMyCar_WindowsPhone_XamlTypeInfo.XamlMember(this, "ViewModel", "FindMyCar.ViewModels.PictureViewModel");
-                xamlMember.Getter = get_10_PictureView_ViewModel;
-                xamlMember.Setter = set_10_PictureView_ViewModel;
+                xamlMember.Getter = get_24_PictureView_ViewModel;
+                xamlMember.Setter = set_24_PictureView_ViewModel;
                 break;
             case "FindMyCar.Pages.RegisterView.ViewModel":
                 userType = (global::FindMyCar.FindMyCar_WindowsPhone_XamlTypeInfo.XamlUserType)GetXamlTypeByName("FindMyCar.Pages.RegisterView");
                 xamlMember = new global::FindMyCar.FindMyCar_WindowsPhone_XamlTypeInfo.XamlMember(this, "ViewModel", "FindMyCar.ViewModels.RegisterViewModel");
-                xamlMember.Getter = get_11_RegisterView_ViewModel;
-                xamlMember.Setter = set_11_RegisterView_ViewModel;
+                xamlMember.Getter = get_25_RegisterView_ViewModel;
+                xamlMember.Setter = set_25_RegisterView_ViewModel;
+                break;
+            case "FindMyCar.Pages.RegisterView.NavigationHelper":
+                userType = (global::FindMyCar.FindMyCar_WindowsPhone_XamlTypeInfo.XamlUserType)GetXamlTypeByName("FindMyCar.Pages.RegisterView");
+                xamlMember = new global::FindMyCar.FindMyCar_WindowsPhone_XamlTypeInfo.XamlMember(this, "NavigationHelper", "FindMyCar.Common.NavigationHelper");
+                xamlMember.Getter = get_26_RegisterView_NavigationHelper;
+                xamlMember.SetIsReadOnly();
+                break;
+            case "FindMyCar.Pages.RegisterView.DefaultViewModel":
+                userType = (global::FindMyCar.FindMyCar_WindowsPhone_XamlTypeInfo.XamlUserType)GetXamlTypeByName("FindMyCar.Pages.RegisterView");
+                xamlMember = new global::FindMyCar.FindMyCar_WindowsPhone_XamlTypeInfo.XamlMember(this, "DefaultViewModel", "FindMyCar.Common.ObservableDictionary");
+                xamlMember.Getter = get_27_RegisterView_DefaultViewModel;
+                xamlMember.SetIsReadOnly();
                 break;
             }
             return xamlMember;
@@ -938,5 +1180,6 @@ namespace FindMyCar.FindMyCar_WindowsPhone_XamlTypeInfo
         }
     }
 }
+
 
 

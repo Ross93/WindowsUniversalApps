@@ -1,3 +1,9 @@
+Assets\1.jpg
+Assets\2.jpg
+Assets\3.jpg
+Assets\4.jpg
+Assets\5.jpg
+Assets\6.jpg
 Assets\Logo.scale-240.png
 Assets\SmallLogo.scale-240.png
 Assets\SplashScreen.scale-240.png
@@ -8,9 +14,16 @@ App.xbf
 FindMyCar.WindowsPhone.xr.xml
 Pages\CarFoundView.xbf
 Pages\CarLeftView.xbf
+Pages\ChangeCarView.xbf
 Pages\FindCarView.xbf
+Pages\HistoryView.xbf
 Pages\LeaveCarView.xbf
 Pages\MainPage.xbf
 Pages\MapView.xbf
 Pages\PictureView.xbf
 Pages\RegisterView.xbf
+README_FIRST.txt
+Toolkit.Content\ApplicationBar.Cancel.png
+Toolkit.Content\ApplicationBar.Check.png
+Toolkit.Content\ApplicationBar.Delete.png
+Toolkit.Content\ApplicationBar.Select.png

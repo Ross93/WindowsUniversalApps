@@ -38,7 +38,13 @@
         </Style>
     </Page.Resources>
 
-    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+    <Grid>
+        <Grid.Background>
+            <ImageBrush Stretch="None"
+                        ImageSource="/Assets/6.jpg" 
+                        AlignmentY="Top"
+                        AlignmentX="Center"/>
+        </Grid.Background>
         <Grid.RowDefinitions>
             <RowDefinition />
             <RowDefinition Height="0.4*"/>
@@ -48,7 +54,8 @@
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
         <TextBlock Text="Register"  Grid.Row="0" FontSize="46" Width="200" Height="70"
-                   HorizontalAlignment="Center"/>
+                   HorizontalAlignment="Center"
+                   Foreground="LightBlue"/>
         <TextBlock Text="Username:"  Grid.Row="1"/>
         <TextBox  Grid.Row="1" Text="{Binding User.Username, Mode=TwoWay}" PlaceholderText="Enter username" Name="usernameInp" />
         <TextBlock  Grid.Row="2" Text="Password:" />

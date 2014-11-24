@@ -36,6 +36,7 @@ namespace FindMyCar
         /// </summary>
         public App()
         {
+
             this.InitializeComponent();
             this.Suspending += this.OnSuspending;
 

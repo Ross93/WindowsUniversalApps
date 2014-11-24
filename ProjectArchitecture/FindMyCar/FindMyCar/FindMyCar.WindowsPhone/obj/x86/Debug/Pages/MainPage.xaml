@@ -13,6 +13,7 @@
             <Setter Property="FontFamily" Value="Comic Sans MS"/>
             <Setter Property="FontSize" Value="24"/>
             <Setter Property="Margin" Value="20 0"/>
+            
         </Style>
         <Style TargetType="PasswordBox">
             <Setter Property="HorizontalAlignment" Value="Right" />
@@ -43,19 +44,39 @@
         </Style>
 
     </Page.Resources>
-    <Grid>
+    <Grid >
+        <Grid.Background>
+            <ImageBrush Stretch="None"
+                        ImageSource="/Assets/6.jpg" 
+                        AlignmentY="Top"
+                        AlignmentX="Center"/>
+        </Grid.Background>
         <Grid.RowDefinitions>
             <RowDefinition Height="0.2*"/>
             <RowDefinition Height="0.2*"/>
             <RowDefinition Height="0.4*"/>
         </Grid.RowDefinitions>
-        <TextBlock Grid.Row="1"  Text="Username:" />
-        <TextBox  Name="UsernameInputBox" Text="{Binding User.Username, Mode=TwoWay}" PlaceholderText="Enter username here" Margin="0,0,20,0" Grid.Row="1" />
+        <TextBlock Text="FIND MY CAR"
+                   VerticalAlignment="Center"
+                   HorizontalAlignment="Center"
+                   FontWeight="Bold"
+                   FontStyle="Italic"
+                   FontSize="46"
+                   Foreground="LightBlue"/>
+        <TextBlock Grid.Row="1" VerticalAlignment="Center" Text="Username:" />
+        <TextBox  Name="UsernameInputBox" VerticalAlignment="Center" Text="{Binding User.Username, Mode=TwoWay}" PlaceholderText="Enter username here" Margin="0,0,20,0" Grid.Row="1" />
         <TextBlock  Grid.Row="2"  Text="Password:" />
         <PasswordBox Grid.Row="2"  Name="PasswordInputBox" Password="{Binding User.Password, Mode=TwoWay}"  PlaceholderText="Enter password here" Margin="0,0.333,20,0" />
-        <Button x:ConnectionId='1' Grid.Row="3" Content="SignUp" Name="signUpButton" HorizontalAlignment="Right"                            />
-        <Button x:ConnectionId='2' Grid.Row="3"  Content="SignIn" Name="signInButton" HorizontalAlignment="Left"                            />
-        <TextBlock Name="test"></TextBlock>
+        <Button x:ConnectionId='1' Grid.Row="3" Content="SignUp" Name="signUpButton" HorizontalAlignment="Right"                            Foreground="LightBlue" />
+        <Button x:ConnectionId='2' Grid.Row="3"  Content="SignIn" Name="signInButton" HorizontalAlignment="Left"                            Foreground="LightBlue" />
+
+        <TextBlock x:Name="Txt2" Text="foo">
+            <TextBlock.RenderTransform>
+                <TranslateTransform x:Name="translateTransform" X="500" />
+            </TextBlock.RenderTransform>
+        </TextBlock>
+
     </Grid>
 </Page>
+    
 

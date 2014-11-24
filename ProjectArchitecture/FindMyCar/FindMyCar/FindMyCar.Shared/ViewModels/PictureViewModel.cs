@@ -7,21 +7,20 @@ using Windows.UI.Xaml.Media.Imaging;
 
 namespace FindMyCar.ViewModels
 {
-   public class PictureViewModel
+    public class PictureViewModel
     {
-          public UserViewModel User { get; set; }
-     //     public BitmapImage Image { get; set; }
-      
+        public UserViewModel User { get; set; }
 
-          public PictureViewModel()
+        public PictureViewModel()
         {
             System.Uri image = null;
             try
             {
                 image = ParseUser.CurrentUser.Get<ParseFile>("Picture").Url;
-            
+
             }
-            catch {
+            catch
+            {
                 showMessage();
                 this.User = new UserViewModel()
                 {
@@ -41,9 +40,10 @@ namespace FindMyCar.ViewModels
 
         }
 
-          public async void showMessage() {
-              var msgDialog = new MessageDialog("There is no picture.");
-              await msgDialog.ShowAsync();   
-          }
+        public async void showMessage()
+        {
+            var msgDialog = new MessageDialog("There is no picture.");
+            await msgDialog.ShowAsync();
+        }
     }
 }

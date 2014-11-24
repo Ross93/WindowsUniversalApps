@@ -19,7 +19,7 @@ namespace FindMyCar.ViewModels
             }
             catch
             {
-              
+
             }
 
             if (moreInfo == null)
@@ -33,13 +33,14 @@ namespace FindMyCar.ViewModels
             };
         }
 
- 
-
         internal async Task foundTheCar()
         {
             var user = ParseUser.CurrentUser;
 
             user["IsCarLeft"] = false;
+            user["Picture"] = null;
+            user["MoreInfo"] = null;
+            user["Location"] = null;
             await user.SaveAsync();
         }
     }

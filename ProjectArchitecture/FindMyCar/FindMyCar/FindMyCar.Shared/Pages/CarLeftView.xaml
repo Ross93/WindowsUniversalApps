@@ -20,8 +20,13 @@
             <Setter Property="FontFamily" Value="Times New Roman"/>
         </Style>
     </Page.Resources>
-    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}"
-          DoubleTapped="Grid_DoubleTapped">
+    <Grid DoubleTapped="Grid_DoubleTapped">
+        <Grid.Background>
+            <ImageBrush Stretch="None"
+                        ImageSource="/Assets/6.jpg" 
+                        AlignmentY="Top"
+                        AlignmentX="Center"/>
+        </Grid.Background>
         <Grid.RowDefinitions>
             <RowDefinition Height="0.2*"/>
             <RowDefinition Height="0.3*"/>
@@ -34,14 +39,14 @@
         <Button Content="Change Car"
                 VerticalAlignment="Top"
                 HorizontalAlignment="Left"
-                Margin="10"
+                Margin="10 5"
                 Grid.Row="0"
                 BorderThickness="0"             
                 Name="changeCarButton"
-                FontSize="20"
+                FontSize="24"
                 Click="changeCarButton_Click" />
         <Button Content="Sign Out"
-                FontSize="20"
+                FontSize="24"
                 Grid.Row="0"
                 BorderThickness="0"
                 VerticalAlignment="Top"
@@ -54,6 +59,7 @@
                 Width="150"
                 FontSize="24"
                 Margin="10"
+                HorizontalAlignment="Right"
                 VerticalAlignment="Bottom"
                 Click="sendSMSButton_Click"/>
         <TextBlock Text="Double click to add pic"
@@ -88,9 +94,9 @@
                 FontSize="42"
                 Grid.Row="4"
                 Margin="20"
+                Name="wholePage"
                 Click="Leave_Click"
                 />
-
 
     </Grid>
  

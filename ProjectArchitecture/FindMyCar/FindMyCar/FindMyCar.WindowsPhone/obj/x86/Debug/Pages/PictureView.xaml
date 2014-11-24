@@ -9,7 +9,12 @@
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
     <Grid x:Name="LayoutRoot">
-
+        <Grid.Background>
+            <ImageBrush Stretch="None"
+                        ImageSource="/Assets/6.jpg" 
+                        AlignmentY="Top"
+                        AlignmentX="Center"/>
+        </Grid.Background>
         <Grid.ChildrenTransitions>
             <TransitionCollection>
                 <EntranceThemeTransition/>
@@ -33,8 +38,8 @@
                    Height="400"
                    VerticalAlignment="Top"
                    Width="350"
-                   Source="{Binding User.MoreInfo}"/>
-
+                   Source="{Binding User.MoreInfo}"
+                   Name="image"/>
         </Grid>
     </Grid>
 </Page>

@@ -4,8 +4,9 @@
     <RootPropertyPathName Name="User" />
     <RootPropertyPathName Name="MoreInfo" />
     <RootPropertyPathName Name="Car" />
-    <RootPropertyPathName Name="Password" />
     <RootPropertyPathName Name="Username" />
+    <RootPropertyPathName Name="CarLeftsInfoItems" />
+    <RootPropertyPathName Name="Password" />
     <RootPropertyPathName Name="Email" />
     <RootPropertyPathName Name="RepeatPass" />
   </Roots.PropertyPathNames>
@@ -24,6 +25,7 @@
       <RootProperty Name="Background" />
       <RootProperty Name="Margin" />
       <RootEvent Name="DoubleTapped" />
+      <RootEvent Name="Holding" />
       <RootMethod Name="GetRow" />
       <RootMethod Name="SetRow" />
     </RootType>
@@ -35,6 +37,13 @@
     <RootType FullName="Windows.UI.Xaml.Controls.StackPanel">
       <RootProperty Name="Margin" />
       <RootProperty Name="Children" />
+      <RootProperty Name="Orientation" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Media.ImageBrush">
+      <RootProperty Name="Stretch" />
+      <RootProperty Name="ImageSource" />
+      <RootProperty Name="AlignmentY" />
+      <RootProperty Name="AlignmentX" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.Maps.MapControl">
       <RootProperty Name="Margin" />
@@ -56,7 +65,11 @@
       <RootProperty Name="HorizontalAlignment" />
       <RootProperty Name="Name" />
       <RootProperty Name="TextWrapping" />
+      <RootProperty Name="Foreground" />
+      <RootProperty Name="FontWeight" />
+      <RootProperty Name="RenderTransform" />
       <RootEvent Name="Tapped" />
+      <RootEvent Name="SelectionChanged" />
     </RootType>
     <RootType FullName="FindMyCar.Pages.MapView" />
     <RootType FullName="Windows.UI.Xaml.FrameworkElement">
@@ -74,7 +87,9 @@
       <RootProperty Name="Height" />
       <RootProperty Name="FontSize" />
       <RootProperty Name="TextWrapping" />
+      <RootProperty Name="Padding" />
       <RootProperty Name="Margin" />
+      <RootProperty Name="VerticalAlignment" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.Control">
       <RootProperty Name="FontFamily" />
@@ -92,6 +107,7 @@
       <RootProperty Name="Margin" />
       <RootProperty Name="BorderThickness" />
       <RootProperty Name="FontFamily" />
+      <RootProperty Name="Foreground" />
       <RootEvent Name="Click" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Setter">
@@ -103,7 +119,18 @@
     </RootType>
     <RootType FullName="FindMyCar.Pages.CarFoundView" />
     <RootType FullName="FindMyCar.Pages.CarLeftView" />
+    <RootType FullName="FindMyCar.Pages.ChangeCarView" />
     <RootType FullName="FindMyCar.Pages.FindCarView" />
+    <RootType FullName="Windows.UI.Xaml.Controls.ListView">
+      <RootProperty Name="Margin" />
+      <RootProperty Name="SelectionMode" />
+      <RootProperty Name="ItemsSource" />
+      <RootProperty Name="ItemTemplate" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.DataTemplate">
+      <RootProperty Name="Template" />
+    </RootType>
+    <RootType FullName="FindMyCar.Pages.HistoryView" />
     <RootType FullName="FindMyCar.Pages.LeaveCarView" />
     <RootType FullName="Windows.UI.Xaml.Controls.PasswordBox">
       <RootProperty Name="Name" />
@@ -111,8 +138,12 @@
       <RootProperty Name="PlaceholderText" />
       <RootProperty Name="Margin" />
     </RootType>
+    <RootType FullName="Windows.UI.Xaml.Media.TranslateTransform">
+      <RootProperty Name="X" />
+    </RootType>
     <RootType FullName="FindMyCar.MainPage" />
     <RootType FullName="Windows.UI.Xaml.Controls.Image">
+      <RootProperty Name="Name" />
       <RootProperty Name="HorizontalAlignment" />
       <RootProperty Name="Height" />
       <RootProperty Name="VerticalAlignment" />

@@ -27,8 +27,14 @@
     <Compile Include="$(MSBuildThisFileDirectory)Pages\CarLeftView.xaml.cs">
       <DependentUpon>CarLeftView.xaml</DependentUpon>
     </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Pages\ChangeCarView.xaml.cs">
+      <DependentUpon>ChangeCarView.xaml</DependentUpon>
+    </Compile>
     <Compile Include="$(MSBuildThisFileDirectory)Pages\FindCarView.xaml.cs">
       <DependentUpon>FindCarView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Pages\HistoryView.xaml.cs">
+      <DependentUpon>HistoryView.xaml</DependentUpon>
     </Compile>
     <Compile Include="$(MSBuildThisFileDirectory)Pages\LeaveCarView.xaml.cs">
       <DependentUpon>LeaveCarView.xaml</DependentUpon>
@@ -45,8 +51,11 @@
     <Compile Include="$(MSBuildThisFileDirectory)SQLite\SQLite.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)SQLite\SQLiteAsync.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)ViewModels\CarFoundViewModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ViewModels\CarLeftDbViewModel.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)ViewModels\CarLeftViewModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ViewModels\ChangeCarViewModel.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)ViewModels\FindCarViewModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ViewModels\HistoryViewModel.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)ViewModels\LeaveCarViewModel.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)ViewModels\MainPageViewModel.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)ViewModels\PictureViewModel.cs" />
@@ -62,7 +71,15 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="$(MSBuildThisFileDirectory)Pages\ChangeCarView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="$(MSBuildThisFileDirectory)Pages\FindCarView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="$(MSBuildThisFileDirectory)Pages\HistoryView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

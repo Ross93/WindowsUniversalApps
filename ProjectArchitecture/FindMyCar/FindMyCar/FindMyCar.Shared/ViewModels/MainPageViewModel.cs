@@ -14,7 +14,6 @@ namespace FindMyCar.ViewModels
 {
     public class MainPageViewModel : ViewModelBase
     {
-        //  public event EventHandler LoginSuccessfull;
 
         public UserViewModel User { get; set; }
 
@@ -43,8 +42,8 @@ namespace FindMyCar.ViewModels
 
         public async Task<bool> Login()
         {
-           
-         try
+
+            try
             {
                 if (this.User.Username.Length < 3)
                 {
@@ -68,7 +67,7 @@ namespace FindMyCar.ViewModels
                     return true;
                 }
             }
-            catch (Exception ex)
+            catch
             {
                 showMessage();
                 return false;
@@ -80,6 +79,6 @@ namespace FindMyCar.ViewModels
             var msgDialog = new MessageDialog("Wrong name or password.");
             await msgDialog.ShowAsync();
         }
-     
+
     }
 }

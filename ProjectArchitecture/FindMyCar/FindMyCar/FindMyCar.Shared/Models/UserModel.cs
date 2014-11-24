@@ -5,7 +5,7 @@ using Parse;
 
 namespace FindMyCar.Models
 {
-   public class UserModel : ParseUser
+    public class UserModel : ParseUser
     {
         [ParseFieldName("Car")]
         public string Car

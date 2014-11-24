@@ -11,6 +11,7 @@ using Windows.Graphics.Display;
 using Windows.UI.ViewManagement;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
+using Windows.UI.Xaml.Controls.Maps;
 using Windows.UI.Xaml.Controls.Primitives;
 using Windows.UI.Xaml.Data;
 using Windows.UI.Xaml.Input;
@@ -103,22 +104,25 @@ namespace FindMyCar.Pages
         /// handlers that cannot cancel the navigation request.</param>
         protected override void OnNavigatedTo(NavigationEventArgs e)
         {
-           List<double> receivedCoords = e.Parameter as List<double>;
-         //   dist.Text = receivedCoords[0].ToString();
-            int a = 6;
+            List<double> receivedCoords = e.Parameter as List<double>;
 
-            leftLat = receivedCoords[2];
-            leftLong = receivedCoords[3];
-            currLat = receivedCoords[0];
-            currLong = receivedCoords[1];
-             
+            leftLat = receivedCoords[3];
+            leftLong = receivedCoords[4];
+            currLat = receivedCoords[1];
+            currLong = receivedCoords[2];
+            AddMapIcon(currLat, currLong, "Your Location");
+            AddMapIcon(leftLat, leftLong, "Car Location");
+
             myMap.Center =
                      new Geopoint(new BasicGeoposition()
                      {
                          Latitude = currLat,
                          Longitude = currLong
                      });
-            myMap.ZoomLevel = 16;
+            myMap.ZoomLevel = 12;
+            myMap.PedestrianFeaturesVisible = true;
+            myMap.LandmarksVisible = true;
+
 
             this.navigationHelper.OnNavigatedTo(e);
         }
@@ -129,5 +133,19 @@ namespace FindMyCar.Pages
         }
 
         #endregion
+
+        private void AddMapIcon(double lat, double longitude, string location)
+        {
+            MapIcon MapIcon1 = new MapIcon();
+            MapIcon1.Location = new Geopoint(new BasicGeoposition()
+            {
+                Latitude = lat,
+                Longitude = longitude
+            });
+            MapIcon1.NormalizedAnchorPoint = new Point(0.5, 1.0);
+            MapIcon1.Title = location;
+            myMap.MapElements.Add(MapIcon1);
+        }
+
     }
 }

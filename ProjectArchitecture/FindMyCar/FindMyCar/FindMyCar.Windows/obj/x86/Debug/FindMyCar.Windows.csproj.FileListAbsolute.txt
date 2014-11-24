@@ -90,3 +90,7 @@ C:\Users\Росица\Desktop\ProjectArchitecture\FindMyCar\FindMyCar\FindMyCar.
 C:\Users\Росица\Desktop\ProjectArchitecture\FindMyCar\FindMyCar\FindMyCar.Windows\obj\x86\Debug\Pages\PictureView.g.cs
 C:\Users\Росица\Desktop\ProjectArchitecture\FindMyCar\FindMyCar\FindMyCar.Windows\obj\x86\Debug\Pages\PictureView.xaml
 C:\Users\Росица\Desktop\ProjectArchitecture\FindMyCar\FindMyCar\FindMyCar.Windows\obj\x86\Debug\Pages\PictureView.xbf
+C:\Users\Росица\Desktop\ProjectArchitecture\FindMyCar\FindMyCar\FindMyCar.Windows\bin\x86\Debug\Pages\PictureView.xbf
+C:\Users\Росица\Desktop\ProjectArchitecture\FindMyCar\FindMyCar\FindMyCar.Windows\bin\x86\Debug\Pages\MapView.xbf
+C:\Users\Росица\Desktop\ProjectArchitecture\FindMyCar\FindMyCar\FindMyCar.Windows\obj\x86\Debug\Pages\MapView.xaml
+C:\Users\Росица\Desktop\ProjectArchitecture\FindMyCar\FindMyCar\FindMyCar.Windows\obj\x86\Debug\Pages\MapView.xbf

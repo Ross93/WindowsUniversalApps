@@ -7,7 +7,7 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
     <Page.Resources>
-        
+
         <!--A Style that affects all TextBlocks-->
         <Style TargetType="TextBlock">
             <Setter Property="HorizontalAlignment" Value="Left" />
@@ -36,9 +36,14 @@
 
         </Style>
     </Page.Resources>
-    <Grid 
-        
-        Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+    <Grid>
+
+        <Grid.Background>
+            <ImageBrush Stretch="None"
+                        ImageSource="/Assets/6.jpg" 
+                        AlignmentY="Top"
+                        AlignmentX="Center"/>
+        </Grid.Background>
         <Grid.RowDefinitions>
             <RowDefinition Height="*"/>
             <RowDefinition Height="*"/>
@@ -46,13 +51,13 @@
             <RowDefinition Height="*"/>
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
-      
+
         <Button Content="See on the map"
                 VerticalAlignment="Top"
                 Grid.Row="0"
                 Click="goToMapButton"
                 HorizontalAlignment="Left"/>
-        
+
         <TextBlock Text="Tap here to see the picture"
                 VerticalAlignment="Top"
                 Tapped="Grid_Tapped"
@@ -62,7 +67,7 @@
                 FontSize="24"
                 FontStyle="Italic"
                 HorizontalAlignment="Left"/>
-        
+
         <TextBlock  Text="Car:"
                     Grid.Row="1"
                     VerticalAlignment="Bottom"/>
@@ -77,7 +82,7 @@
                    Height="40"
                    Text="Distance:"
                     Grid.Row="2"/>
-        
+
         <TextBlock FontSize="32"
                    Height="40"
                    HorizontalAlignment="Right"
@@ -86,14 +91,14 @@
                    Name="dist"
                    Grid.Row="2"
                    />
-        
+
         <TextBlock  Text="Additional Info:"
                     Grid.Row="3"/>
 
         <TextBlock Text="{Binding User.MoreInfo, Mode=TwoWay}"
                    HorizontalAlignment="Right"
                     Grid.Row="3"/>
-        
+
         <Button Content="Car found!"
                 VerticalAlignment="Bottom"
                 FontSize="38"
@@ -102,7 +107,5 @@
                 Width="250"
                 Height="80"
                 Click="carFoundButton"/>
-
-
     </Grid>
 </Page>

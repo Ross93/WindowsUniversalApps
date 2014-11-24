@@ -15,6 +15,7 @@ using Windows.UI.Xaml.Controls.Primitives;
 using Windows.UI.Xaml.Data;
 using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
+using Windows.UI.Xaml.Media.Animation;
 using Windows.UI.Xaml.Navigation;
 
 // The Basic Page item template is documented at http://go.microsoft.com/fwlink/?LinkID=390556
@@ -27,16 +28,17 @@ namespace FindMyCar.Pages
     public sealed partial class PictureView : Page
     {
         private NavigationHelper navigationHelper;
+
         private ObservableDictionary defaultViewModel = new ObservableDictionary();
 
-         public PictureView()
+        public PictureView()
             : this(new PictureViewModel())
         {
 
         }
 
 
-         public PictureView(PictureViewModel viewModel)
+        public PictureView(PictureViewModel viewModel)
         {
             this.InitializeComponent();
 
@@ -121,6 +123,20 @@ namespace FindMyCar.Pages
         protected override void OnNavigatedTo(NavigationEventArgs e)
         {
             this.navigationHelper.OnNavigatedTo(e);
+            performFadeIn();
+        }
+
+        private void performFadeIn()
+        {
+            DoubleAnimation fadeIn = new DoubleAnimation();
+            Storyboard fadeOutStb = new Storyboard();
+            fadeIn.From = 0;
+            fadeIn.To = 1;
+            fadeIn.Duration = new TimeSpan(0, 0, 0, 0, 2000);
+            fadeOutStb.Children.Add(fadeIn);
+            Storyboard.SetTarget(fadeIn, image);
+            Storyboard.SetTargetProperty(fadeIn, "Opacity");
+            fadeOutStb.Begin();
         }
 
         protected override void OnNavigatedFrom(NavigationEventArgs e)

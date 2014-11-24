@@ -27,12 +27,6 @@ namespace FindMyCar
     /// </summary>
     public sealed partial class MainPage : Page
     {
-        //public MainPage()
-        //{
-        //    this.InitializeComponent();
-
-        //    this.NavigationCacheMode = NavigationCacheMode.Required;
-        //}
 
         public MainPage()
             : this(new MainPageViewModel())
@@ -89,7 +83,8 @@ namespace FindMyCar
                 }
 
             }
-            else {
+            else
+            {
                 var msgDialog = new MessageDialog("No internet connection");
                 await msgDialog.ShowAsync();
             }
@@ -113,8 +108,5 @@ namespace FindMyCar
                 this.DataContext = value;
             }
         }
-
-
-
     }
 }
